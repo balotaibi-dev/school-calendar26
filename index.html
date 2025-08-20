@@ -179,12 +179,14 @@
         /* الألوان الخاصة */
         
         .autumn-break-card {
-            background: linear-gradient(135deg, #fff3cd, #ffeaa7);
-            border: 3px solid #ffc107;
-        }
-        
-        .autumn-break-card .week-title {
-            color: #856404;
+    background: linear-gradient(135deg, #e0f7fa, #a7ffeb); /* تدرج أزرق فاتح مع أخضر فاتح */
+    border: 3px solid #ffc107; /* إطار أصفر من الشعار */
+}
+
+.autumn-break-card .week-title {
+    color: #00796b; /* أخضر غامق متناسق مع الشعار */
+}
+
         }
         
         /* التفاصيل المنبثقة */
@@ -653,15 +655,26 @@
         <button class="control-btn expand-btn" onclick="expandAll()">📋 عرض جميع التفاصيل</button>
         <button class="control-btn" onclick="clearSavedData()" style="background: #6c757d;">🗑️ مسح البيانات</button>
     </div>
-    
-    <div class="overlay" id="overlay" onclick="closeDetails()"></div>
-    
-    <div class="container" id="schedule-content">
-        <div class="header">
-            <div class="header-content">
-                <img src="https://salogos.org/wp-content/uploads/2021/11/UntiTtled-1-1300x988.png" alt="شعار وزارة التعليم" class="ministry-logo">
-                
-                <!-- حقول الإدارة التعليمية -->
+    <!-- الهيدر -->
+<div class="overlay" id="overlay" onclick="closeDetails()"></div>
+
+<div class="container" id="schedule-content">
+    <div class="header">
+        <div class="header-content">
+            <!-- شعار المدرسة -->
+            <img src="logo.PNG" alt="شعار مدارس دار الذكر قسم البنات" class="school-logo">
+            
+            <!-- اسم المدرسة -->
+            <h1 class="school-name">مدارس دار الذكر قسم البنات</h1>
+        </div>
+    </div>
+</div>
+
+<!-- الفوتر -->
+<footer class="footer">
+    <p>مدارس دار الذكر قسم البنات © 2025</p>
+</footer>
+    <!-- حقول الإدارة التعليمية -->
                 <div style="display: flex; flex-direction: column; gap: 3px; margin: 0 15px;">
                     <input type="text" id="general-education" placeholder="الإدارة العامة للتعليم" style="
                         background: transparent; 
@@ -676,7 +689,7 @@
                         width: 200px;
                     " onchange="saveEducationData()" oninput="saveEducationData()">
                     
-                    <input type="text" id="education-region" placeholder="المنطقة التعليمية" style="
+                    <input type="text" id="education-region" placeholder="الإدارة العامة للتعليم بمحافظة جدة  " style="
                         background: transparent; 
                         border: none; 
                         color: white; 
@@ -689,7 +702,7 @@
                         width: 200px;
                     " onchange="saveEducationData()" oninput="saveEducationData()">
                     
-                    <input type="text" id="school-name" placeholder="الإدارة أو المدرسة" style="
+                    <input type="text" id="school-name" placeholder="مدارس دار الذكر الأهلية - قسم البنات" style="
                         background: transparent; 
                         border: none; 
                         color: white; 
@@ -1749,29 +1762,30 @@
                     <span class="day-name" style="color: #003366; font-weight: 700;">${getName2()}</span>
                 </div>
             </div>` : ''}
-            
-            ${getPosition3() && getName3() ? `<div class="week-detail-section" style="background: white; border-color: #6c757d;">
-                <h4 style="background: #6c757d; color: white;">${getPosition3()}</h4>
-                <div class="day-row">
-                    <span class="day-name" style="color: #003366; font-weight: 700;">${getName3()}</span>
-                </div>
-            </div>` : ''}
-        </div>
+          ${getPosition3() && getName3() ? `<div class="week-detail-section" style="background: white; border-color: #6c757d;">
+    <h4 style="background: #6c757d; color: white;">${getPosition3()}</h4>
+    <div class="day-row">
+        <span class="day-name" style="color: #003366; font-weight: 700;">${getName3()}</span>
     </div>
+</div>` : ''}
+</div>
+</div>
 
-    <!-- معلومات التواصل -->
-    <div class="contact-info">
-        <div style="display: flex; align-items: center; justify-content: center; gap: 15px;">
-            <img src="https://h.top4top.io/p_3453yqc3h0.png" alt="شعار قناة رسم" style="margin-bottom: 0;">
-            
-            <div style="text-align: center;">
-                <strong style="color: #ecf0f1; font-size: 9px;">جميع الحقوق محفوظة</strong><br>
-                <span style="color: #28a745; font-size: 10px; font-weight: 600;">قناة رسم للتصميم والخدمات التعليمية</span>
-            </div>
+<!-- معلومات التواصل -->
+<div class="contact-info">
+    <div style="display: flex; align-items: center; justify-content: center; gap: 15px;">
+        <!-- شعار المدرسة -->
+        <img src="logo.PNG" alt="شعار مدارس دار الذكر قسم البنات" style="height: 50px; margin-bottom: 0;">
+        
+        <div style="text-align: center;">
+            <strong style="color: #00796b; font-size: 12px;">مدارس دار الذكر قسم البنات © 2025</strong><br>
+            <span style="color: #ffc107; font-size: 11px; font-weight: 600;">جدة - المملكة العربية السعودية</span>
         </div>
     </div>
+</div>
 </body>
 </html>
+
             `;
             
             // كتابة المحتوى في النافذة الجديدة
