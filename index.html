@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>التقويم الدراسي للفصل الدراسي الأول 1447 هـ</title>
-    <!-- خطوط محلية فقط - لا حاجة للإنترنت -->
     <style>
         /* خط Cairo */
         @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap');
@@ -26,7 +25,7 @@
         
         body {
             font-family: 'Cairo', 'Tahoma', 'Arial Unicode MS', 'Segoe UI', sans-serif;
-            background: linear-gradient(135deg, #4CAF50 0%, #2196F3 50%, #00BCD4 100%);
+            background: #e0f7fa; /* لون خلفية جديد */
             padding: 20px;
             min-height: 100vh;
             font-display: swap;
@@ -79,8 +78,8 @@
         }
         
         .header {
-            background: #4a4a4a;
-            color: white;
+            background: #f8f9fa; /* لون خلفية جديد */
+            color: #212529;
             padding: 20px 30px;
             text-align: center;
             position: relative;
@@ -93,7 +92,7 @@
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, #28a745 0%, #007bff 100%);
+            background: #28a745; /* لون جديد */
         }
         
         .header-content {
@@ -104,9 +103,9 @@
             flex-wrap: wrap;
         }
         
-        .ministry-logo {
-            width: 80px;
-            height: 80px;
+        .ministry-logo, .school-logo {
+            width: 50px;
+            height: 50px;
             object-fit: contain;
             margin: 0;
         }
@@ -115,7 +114,7 @@
             font-size: 20px;
             font-weight: 700;
             margin: 0;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            text-shadow: none;
             line-height: 1.2;
         }
         
@@ -147,7 +146,7 @@
         .week-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-            border-color: #007bff;
+            border-color: #4CAF50; /* لون جديد */
         }
         
         .week-card.active {
@@ -179,12 +178,12 @@
         /* الألوان الخاصة */
         
         .autumn-break-card {
-    background: linear-gradient(135deg, #e0f7fa, #a7ffeb); /* تدرج أزرق فاتح مع أخضر فاتح */
-    border: 3px solid #ffc107; /* إطار أصفر من الشعار */
+    background: #e0f7fa;
+    border: 3px solid #ffc107;
 }
 
 .autumn-break-card .week-title {
-    color: #00796b; /* أخضر غامق متناسق مع الشعار */
+    color: #00796b;
 }
 
         }
@@ -197,7 +196,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             background: white;
-            border: 3px solid #007bff;
+            border: 3px solid #4CAF50; /* لون جديد */
             border-radius: 15px;
             padding: 30px;
             box-shadow: 0 10px 40px rgba(0,0,0,0.3);
@@ -231,7 +230,7 @@
             margin: 8px 0;
             background: #f8f9fa;
             border-radius: 8px;
-            border-right: 4px solid #007bff;
+            border-right: 4px solid #4CAF50; /* لون جديد */
         }
         
         .day-detail.national-day {
@@ -252,7 +251,7 @@
         .day-detail.school-start-day {
             background: linear-gradient(135deg, #d4edda, #cce5ff);
             border-right: 4px solid;
-            border-image: linear-gradient(90deg, #28a745, #007bff) 1;
+            border-image: linear-gradient(90deg, #28a745, #4CAF50) 1; /* لون جديد */
         }
         
         .day-name-detail {
@@ -347,7 +346,7 @@
         .info-box:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-            border-color: #007bff;
+            border-color: #4CAF50; /* لون جديد */
         }
         
         .final-exams {
@@ -429,8 +428,8 @@
             }
             
             .header {
-                background: #4a4a4a !important;
-                color: white !important;
+                background: #f8f9fa !important;
+                color: #212529 !important;
                 padding: 15px !important;
                 margin-bottom: 20px !important;
                 border-radius: 0 !important;
@@ -445,16 +444,16 @@
             }
             
             .header input {
-                color: white !important;
+                color: #212529 !important;
                 background: transparent !important;
                 border: none !important;
                 font-weight: 700 !important;
                 text-align: center !important;
             }
             
-            .ministry-logo {
-                width: 60px !important;
-                height: 60px !important;
+            .ministry-logo, .school-logo {
+                width: 50px !important;
+                height: 50px !important;
                 object-fit: contain !important;
             }
             
@@ -559,7 +558,7 @@
             
             .name-box {
                 background: white !important;
-                border: 2px solid #007bff !important;
+                border: 2px solid #4CAF50 !important; /* لون جديد */
                 border-radius: 8px !important;
                 padding: 15px !important;
                 text-align: center !important;
@@ -593,16 +592,16 @@
             }
             
             .contact-info {
-                background: #2c3e50 !important;
-                color: white !important;
+                background: #f8f9fa !important; /* لون جديد */
+                color: #212529 !important;
                 padding: 20px !important;
                 text-align: center !important;
                 page-break-inside: avoid !important;
             }
             
             .contact-info img {
-                max-width: 60px !important;
-                max-height: 60px !important;
+                max-width: 50px !important; /* حجم جديد */
+                max-height: 50px !important; /* حجم جديد */
                 margin-bottom: 10px !important;
             }
         }
@@ -631,15 +630,15 @@
             }
             
             .contact-info img {
-                max-width: 60px !important;
-                max-height: 60px !important;
+                max-width: 50px !important; /* حجم جديد */
+                max-height: 50px !important; /* حجم جديد */
             }
         }
         
         @media (max-width: 480px) {
             .contact-info img {
-                max-width: 50px !important;
-                max-height: 50px !important;
+                max-width: 40px !important;
+                max-height: 40px !important;
             }
             
             .contact-info {
@@ -655,31 +654,26 @@
         <button class="control-btn expand-btn" onclick="expandAll()">📋 عرض جميع التفاصيل</button>
         <button class="control-btn" onclick="clearSavedData()" style="background: #6c757d;">🗑️ مسح البيانات</button>
     </div>
-    <!-- الهيدر -->
-<div class="overlay" id="overlay" onclick="closeDetails()"></div>
+    <div class="overlay" id="overlay" onclick="closeDetails()"></div>
 
 <div class="container" id="schedule-content">
     <div class="header">
         <div class="header-content">
-            <!-- شعار المدرسة -->
             <img src="logo.PNG" alt="شعار مدارس دار الذكر قسم البنات" class="school-logo">
             
-            <!-- اسم المدرسة -->
             <h1 class="school-name">مدارس دار الذكر قسم البنات</h1>
         </div>
     </div>
 </div>
 
-<!-- الفوتر -->
 <footer class="footer">
     <p>مدارس دار الذكر قسم البنات © 2025</p>
 </footer>
-    <!-- حقول الإدارة التعليمية -->
-                <div style="display: flex; flex-direction: column; gap: 3px; margin: 0 15px;">
+    <div style="display: flex; flex-direction: column; gap: 3px; margin: 0 15px;">
                     <input type="text" id="general-education" placeholder="الإدارة العامة للتعليم" style="
                         background: transparent; 
                         border: none; 
-                        color: white; 
+                        color: #212529; 
                         font-family: 'Cairo', 'Tahoma', sans-serif; 
                         font-size: 13px; 
                         font-weight: 700;
@@ -692,7 +686,7 @@
                     <input type="text" id="education-region" placeholder="الإدارة العامة للتعليم بمحافظة جدة  " style="
                         background: transparent; 
                         border: none; 
-                        color: white; 
+                        color: #212529; 
                         font-family: 'Cairo', 'Tahoma', sans-serif; 
                         font-size: 12px; 
                         font-weight: 700;
@@ -705,7 +699,7 @@
                     <input type="text" id="school-name" placeholder="مدارس دار الذكر الأهلية - قسم البنات" style="
                         background: transparent; 
                         border: none; 
-                        color: white; 
+                        color: #212529; 
                         font-family: 'Cairo', 'Tahoma', sans-serif; 
                         font-size: 11px; 
                         font-weight: 700;
@@ -721,12 +715,11 @@
                 <h1>للفصل الدراسي الأول لعام 1447 هـ</h1>
             </div>
                 
-                <!-- مربع اسم المادة تحت العنوان -->
                 <div style="margin-top: 10px;">
                     <input type="text" id="subject-name" placeholder="اكتب توزيع مادة واختر مادتك" style="
                         background: transparent; 
                         border: none; 
-                        color: white; 
+                        color: #212529; 
                         font-family: 'Cairo', 'Tahoma', sans-serif; 
                         font-size: 14px; 
                         font-weight: 700;
@@ -740,72 +733,61 @@
             </div>
         </div>
         
-        <!-- العرض التفاعلي -->
         <div class="schedule-grid" id="interactive-view">
-            <!-- الأسبوع الأول -->
             <div class="week-card" onclick="showWeekDetails(1)" style="background: linear-gradient(135deg, #d4edda, #cce5ff); border: 3px solid #28a745;">
                 <div class="week-title">الأسبوع الأول</div>
                 <div class="week-dates">1 / 3 - 5 / 3</div>
                 <div class="week-status" style="background: #28a745; color: white;">🎓 بداية العام الدراسي</div>
             </div>
             
-            <!-- الأسبوع الثاني -->
             <div class="week-card" onclick="showWeekDetails(2)">
                 <div class="week-title">الأسبوع الثاني</div>
                 <div class="week-dates">8 / 3 - 12 / 3</div>
                 <div class="week-status" style="background: #e3f2fd; color: #1565c0;">انقر للتفاصيل</div>
             </div>
             
-            <!-- الأسبوع الثالث -->
             <div class="week-card" onclick="showWeekDetails(3)">
                 <div class="week-title">الأسبوع الثالث</div>
                 <div class="week-dates">15 / 3 - 19 / 3</div>
                 <div class="week-status" style="background: #e3f2fd; color: #1565c0;">انقر للتفاصيل</div>
             </div>
             
-            <!-- الأسبوع الرابع -->
             <div class="week-card" onclick="showWeekDetails(4)">
                 <div class="week-title">الأسبوع الرابع</div>
                 <div class="week-dates">22 / 3 - 26 / 3</div>
                 <div class="week-status" style="background: #e3f2fd; color: #1565c0;">انقر للتفاصيل</div>
             </div>
             
-            <!-- الأسبوع الخامس -->
             <div class="week-card" onclick="showWeekDetails(5)">
                 <div class="week-title">الأسبوع الخامس</div>
                 <div class="week-dates">29 / 3 - 3 / 4</div>
                 <div class="week-status" style="background: #28a745; color: white;">🇸🇦 اليوم الوطني</div>
             </div>
             
-            <!-- الأسبوع السادس -->
             <div class="week-card" onclick="showWeekDetails(6)">
                 <div class="week-title">الأسبوع السادس</div>
                 <div class="week-dates">6 / 4 - 10 / 4</div>
                 <div class="week-status" style="background: #e3f2fd; color: #1565c0;">انقر للتفاصيل</div>
             </div>
             
-            <!-- الأسبوع السابع -->
             <div class="week-card" onclick="showWeekDetails(7)">
                 <div class="week-title">الأسبوع السابع</div>
                 <div class="week-dates">13 / 4 - 17 / 4</div>
                 <div class="week-status" style="background: #e3f2fd; color: #1565c0;">انقر للتفاصيل</div>
             </div>
             
-            <!-- الأسبوع الثامن -->
             <div class="week-card" onclick="showWeekDetails(8)">
                 <div class="week-title">الأسبوع الثامن</div>
                 <div class="week-dates">20 / 4 - 20 / 4</div>
                 <div class="week-status" style="background: #dc3545; color: white;">🏖️ إجازة إضافية</div>
             </div>
             
-            <!-- الأسبوع التاسع -->
             <div class="week-card" onclick="showWeekDetails(9)">
                 <div class="week-title">الأسبوع التاسع</div>
                 <div class="week-dates">27 / 4 - 1 / 5</div>
                 <div class="week-status" style="background: #e3f2fd; color: #1565c0;">انقر للتفاصيل</div>
             </div>
             
-            <!-- الأسبوع العاشر -->
             <div class="week-card" onclick="showWeekDetails(10)">
                 <div class="week-title">الأسبوع العاشر</div>
                 <div class="week-dates">4 / 5 - 8 / 5</div>
@@ -830,7 +812,6 @@
                 <div class="week-status" style="background: #e3f2fd; color: #1565c0;">انقر للتفاصيل</div>
             </div>
             
-            <!-- إجازة الخريف -->
             <div class="week-card" style="background: #fff3cd; border: 3px solid #ffc107;">
                 <div class="week-title" style="color: #856404;">🍂 إجازة الخريف</div>
                 <div class="week-dates"><strong>30 / 5 - 8 / 6</strong></div>
@@ -869,21 +850,18 @@
             
 
             
-            <!-- بداية الاختبارات النهائية -->
             <div class="week-card" style="background: #e9ecef; border: 3px solid #6c757d;">
                 <div class="week-title" style="color: #495057;">📝 الاختبارات النهائية</div>
                 <div class="week-dates"><strong>تبدأ من يوم الأحد</strong></div>
                 <div class="week-status" style="background: #6c757d; color: white;">15 / 7 / 1447 هـ</div>
             </div>
             
-            <!-- بداية إجازة منتصف العام -->
             <div class="week-card" style="background: #d4edda; border: 3px solid #28a745;">
                 <div class="week-title" style="color: #155724;">🏖️ إجازة منتصف العام</div>
                 <div class="week-dates"><strong>20 / 7 / 1447 هـ</strong></div>
                 <div class="week-status" style="background: #28a745; color: white;">إجازة رسمية</div>
             </div>
             
-            <!-- بداية الفصل الثاني -->
             <div class="week-card" style="background: #d1ecf1; border: 3px solid #17a2b8;">
                 <div class="week-title" style="color: #0c5460;">📚 الفصل الثاني</div>
                 <div class="week-dates"><strong>29 / 7 / 1447 هـ</strong></div>
@@ -897,14 +875,11 @@
         
 
 
-        <!-- مربعات الأسماء -->
         <div class="names-section" style="background: #f8f9fa; padding: 30px; border-top: 3px solid #dee2e6;">
             <div style="display: flex; justify-content: center; gap: 30px; align-items: flex-start;">
                 
-                <!-- مربعات الأسماء عمودياً -->
                 <div style="display: flex; flex-direction: column; gap: 15px;">
                     
-                    <!-- مربع الأول -->
                     <div class="name-box" style="background: white; border: 2px solid #6c757d; border-radius: 10px; padding: 15px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); min-width: 250px;">
                         <input type="text" id="position1" placeholder="ادخل الصفة (مشرف، معلم، مدير إدارة...)" style="
                             width: 100%; 
@@ -934,7 +909,6 @@
                         " onchange="saveNamesData()" onfocus="this.style.background='white'; this.style.borderColor='#40E0D0'" onblur="this.style.background='white'; this.style.borderColor='#6c757d'">
                     </div>
                     
-                    <!-- مربع الثاني -->
                     <div class="name-box" style="background: white; border: 2px solid #6c757d; border-radius: 10px; padding: 15px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); min-width: 250px;">
                         <input type="text" id="position2" placeholder="ادخل الصفة (مشرف، معلم، مدير إدارة...)" style="
                             width: 100%; 
@@ -964,7 +938,6 @@
                         " onchange="saveNamesData()" onfocus="this.style.background='white'; this.style.borderColor='#40E0D0'" onblur="this.style.background='white'; this.style.borderColor='#6c757d'">
                     </div>
                     
-                    <!-- مربع الثالث -->
                     <div class="name-box" style="background: white; border: 2px solid #6c757d; border-radius: 10px; padding: 15px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); min-width: 250px;">
                         <input type="text" id="position3" placeholder="ادخل الصفة (مشرف، معلم، مدير إدارة...)" style="
                             width: 100%; 
@@ -973,1009 +946,326 @@
                             border-radius: 5px; 
                             font-family: 'Cairo', 'Tahoma', sans-serif; 
                             font-size: 14px; 
-                            text-align: center;
-                            background: white;
-                            transition: all 0.3s ease;
-                            margin-bottom: 8px;
-                            color: #000000;
-                            font-weight: 600;
-                        " onchange="saveNamesData()" onfocus="this.style.background='white'; this.style.borderColor='#40E0D0'" onblur="this.style.background='white'; this.style.borderColor='#6c757d'">
-                        
-                        <input type="text" id="name3" placeholder="ادخل الاسم" style="
-                            width: 100%; 
-                            padding: 8px; 
-                            border: 1px solid #dee2e6; 
-                            border-radius: 5px; 
-                            font-family: 'Cairo', 'Tahoma', sans-serif; 
-                            font-size: 14px; 
-                            text-align: center;
-                            background: white;
-                            transition: all 0.3s ease;
-                        " onchange="saveNamesData()" onfocus="this.style.background='white'; this.style.borderColor='#40E0D0'" onblur="this.style.background='white'; this.style.borderColor='#6c757d'">
+...
+
+                    " onchange="saveNamesData()" onfocus="this.style.background='white'; this.style.borderColor='#40E0D0'" onblur="this.style.background='white'; this.style.borderColor='#6c757d'">
                     </div>
-                    
                 </div>
-                
             </div>
         </div>
 
-        <!-- معلومات التواصل -->
-        <div class="contact-info" style="background: linear-gradient(135deg, #2c3e50, #34495e); color: white; padding: 30px; text-align: center; font-size: 14px; line-height: 1.6; box-shadow: inset 0 2px 10px rgba(0,0,0,0.2);">
-            
-            <!-- الشعار مع الرابط -->
-            <div style="margin-bottom: 25px;">
-                <a href="https://t.me/+SJnY9vPy7yo5YmI1" target="_blank" style="display: inline-block; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-                    <img src="https://h.top4top.io/p_3453yqc3h0.png" alt="شعار قناة رسم" style="
-                        max-width: 80px; 
-                        max-height: 80px; 
-                        width: auto; 
-                        height: auto; 
-                        object-fit: contain; 
-                        transition: transform 0.3s ease;
-                        display: block;
-                    ">
-                </a>
-            </div>
-            
-            <!-- عبارة الحقوق -->
-            <div style="margin-bottom: 20px;">
-                <strong style="color: #ecf0f1; font-size: 16px; font-weight: 700;">جميع الحقوق محفوظة</strong><br>
-                <span style="color: #28a745; font-size: 18px; font-weight: 600; margin-top: 8px; display: inline-block;">قناة رسم للتصميم والخدمات التعليمية</span>
-            </div>
-            
-        </div>
-
-    </div>
-    
-    <!-- نافذة التفاصيل -->
-    <div class="week-details" id="week-details">
+    </div> <div class="week-details" id="week-details">
         <button class="close-details" onclick="closeDetails()">×</button>
         <div class="details-header">
             <h3 id="details-title">الأسبوع الأول</h3>
         </div>
         <div id="details-content">
-            <!-- سيتم إنشاء المحتوى بواسطة JavaScript -->
-        </div>
+            </div>
     </div>
-
     <script>
         // بيانات الأسابيع
         const weeksData = {
             1: {
                 title: "الأسبوع الأول",
                 days: [
-                    {name: "الأحد", date: "1 / 3", subject: "🎓 بداية العام الدراسي"},
-                    {name: "الاثنين", date: "2 / 3", subject: ""},
-                    {name: "الثلاثاء", date: "3 / 3", subject: ""},
-                    {name: "الأربعاء", date: "4 / 3", subject: ""},
-                    {name: "الخميس", date: "5 / 3", subject: ""}
+                    { name: "الأحد", date: "1 / 3", subject: "🎓 بداية العام الدراسي" },
+                    { name: "الاثنين", date: "2 / 3", subject: "" },
+                    { name: "الثلاثاء", date: "3 / 3", subject: "" },
+                    { name: "الأربعاء", date: "4 / 3", subject: "" },
+                    { name: "الخميس", date: "5 / 3", subject: "" }
                 ]
             },
             2: {
                 title: "الأسبوع الثاني",
                 days: [
-                    {name: "الأحد", date: "8 / 3", subject: ""},
-                    {name: "الاثنين", date: "9 / 3", subject: ""},
-                    {name: "الثلاثاء", date: "10 / 3", subject: ""},
-                    {name: "الأربعاء", date: "11 / 3", subject: ""},
-                    {name: "الخميس", date: "12 / 3", subject: ""}
+                    { name: "الأحد", date: "8 / 3", subject: "" },
+                    { name: "الاثنين", date: "9 / 3", subject: "" },
+                    { name: "الثلاثاء", date: "10 / 3", subject: "" },
+                    { name: "الأربعاء", date: "11 / 3", subject: "" },
+                    { name: "الخميس", date: "12 / 3", subject: "" }
                 ]
             },
             3: {
                 title: "الأسبوع الثالث",
                 days: [
-                    {name: "الأحد", date: "15 / 3", subject: ""},
-                    {name: "الاثنين", date: "16 / 3", subject: ""},
-                    {name: "الثلاثاء", date: "17 / 3", subject: ""},
-                    {name: "الأربعاء", date: "18 / 3", subject: ""},
-                    {name: "الخميس", date: "19 / 3", subject: ""}
+                    { name: "الأحد", date: "15 / 3", subject: "" },
+                    { name: "الاثنين", date: "16 / 3", subject: "" },
+                    { name: "الثلاثاء", date: "17 / 3", subject: "" },
+                    { name: "الأربعاء", date: "18 / 3", subject: "" },
+                    { name: "الخميس", date: "19 / 3", subject: "" }
                 ]
             },
             4: {
                 title: "الأسبوع الرابع",
                 days: [
-                    {name: "الأحد", date: "22 / 3", subject: ""},
-                    {name: "الاثنين", date: "23 / 3", subject: ""},
-                    {name: "الثلاثاء", date: "24 / 3", subject: ""},
-                    {name: "الأربعاء", date: "25 / 3", subject: ""},
-                    {name: "الخميس", date: "26 / 3", subject: ""}
+                    { name: "الأحد", date: "22 / 3", subject: "" },
+                    { name: "الاثنين", date: "23 / 3", subject: "" },
+                    { name: "الثلاثاء", date: "24 / 3", subject: "" },
+                    { name: "الأربعاء", date: "25 / 3", subject: "" },
+                    { name: "الخميس", date: "26 / 3", subject: "" }
                 ]
             },
             5: {
                 title: "الأسبوع الخامس",
                 days: [
-                    {name: "الأحد", date: "29 / 3", subject: ""},
-                    {name: "الاثنين", date: "30 / 3", subject: ""},
-                    {name: "الثلاثاء", date: "1 / 4", subject: "اليوم الوطني 🇸🇦"},
-                    {name: "الأربعاء", date: "2 / 4", subject: ""},
-                    {name: "الخميس", date: "3 / 4", subject: ""}
+                    { name: "الأحد", date: "29 / 3", subject: "" },
+                    { name: "الاثنين", date: "30 / 3", subject: "" },
+                    { name: "الثلاثاء", date: "1 / 4", subject: "اليوم الوطني 🇸🇦" },
+                    { name: "الأربعاء", date: "2 / 4", subject: "" },
+                    { name: "الخميس", date: "3 / 4", subject: "" }
                 ]
             },
             6: {
                 title: "الأسبوع السادس",
                 days: [
-                    {name: "الأحد", date: "6 / 4", subject: ""},
-                    {name: "الاثنين", date: "7 / 4", subject: ""},
-                    {name: "الثلاثاء", date: "8 / 4", subject: ""},
-                    {name: "الأربعاء", date: "9 / 4", subject: ""},
-                    {name: "الخميس", date: "10 / 4", subject: ""}
+                    { name: "الأحد", date: "6 / 4", subject: "" },
+                    { name: "الاثنين", date: "7 / 4", subject: "" },
+                    { name: "الثلاثاء", date: "8 / 4", subject: "" },
+                    { name: "الأربعاء", date: "9 / 4", subject: "" },
+                    { name: "الخميس", date: "10 / 4", subject: "" }
                 ]
             },
             7: {
                 title: "الأسبوع السابع",
                 days: [
-                    {name: "الأحد", date: "13 / 4", subject: ""},
-                    {name: "الاثنين", date: "14 / 4", subject: ""},
-                    {name: "الثلاثاء", date: "15 / 4", subject: ""},
-                    {name: "الأربعاء", date: "16 / 4", subject: ""},
-                    {name: "الخميس", date: "17 / 4", subject: ""}
+                    { name: "الأحد", date: "13 / 4", subject: "" },
+                    { name: "الاثنين", date: "14 / 4", subject: "" },
+                    { name: "الثلاثاء", date: "15 / 4", subject: "" },
+                    { name: "الأربعاء", date: "16 / 4", subject: "" },
+                    { name: "الخميس", date: "17 / 4", subject: "" }
                 ]
             },
             8: {
                 title: "الأسبوع الثامن",
                 days: [
-                    {name: "الأحد", date: "20 / 4", subject: "إجازة إضافية 🏖️"},
-                    {name: "الاثنين", date: "21 / 4", subject: ""},
-                    {name: "الثلاثاء", date: "22 / 4", subject: ""},
-                    {name: "الأربعاء", date: "23 / 4", subject: ""},
-                    {name: "الخميس", date: "24 / 4", subject: ""}
+                    { name: "الأحد", date: "20 / 4", subject: "إجازة إضافية 🏖️" },
+                    { name: "الاثنين", date: "21 / 4", subject: "" },
+                    { name: "الثلاثاء", date: "22 / 4", subject: "" },
+                    { name: "الأربعاء", date: "23 / 4", subject: "" },
+                    { name: "الخميس", date: "24 / 4", subject: "" }
                 ]
             },
             9: {
                 title: "الأسبوع التاسع",
                 days: [
-                    {name: "الأحد", date: "27 / 4", subject: ""},
-                    {name: "الاثنين", date: "28 / 4", subject: ""},
-                    {name: "الثلاثاء", date: "29 / 4", subject: ""},
-                    {name: "الأربعاء", date: "30 / 4", subject: ""},
-                    {name: "الخميس", date: "1 / 5", subject: ""}
+                    { name: "الأحد", date: "27 / 4", subject: "" },
+                    { name: "الاثنين", date: "28 / 4", subject: "" },
+                    { name: "الثلاثاء", date: "29 / 4", subject: "" },
+                    { name: "الأربعاء", date: "30 / 4", subject: "" },
+                    { name: "الخميس", date: "1 / 5", subject: "" }
                 ]
             },
             10: {
                 title: "الأسبوع العاشر",
                 days: [
-                    {name: "الأحد", date: "4 / 5", subject: ""},
-                    {name: "الاثنين", date: "5 / 5", subject: ""},
-                    {name: "الثلاثاء", date: "6 / 5", subject: ""},
-                    {name: "الأربعاء", date: "7 / 5", subject: ""},
-                    {name: "الخميس", date: "8 / 5", subject: ""}
+                    { name: "الأحد", date: "4 / 5", subject: "" },
+                    { name: "الاثنين", date: "5 / 5", subject: "" },
+                    { name: "الثلاثاء", date: "6 / 5", subject: "" },
+                    { name: "الأربعاء", date: "7 / 5", subject: "" },
+                    { name: "الخميس", date: "8 / 5", subject: "" }
                 ]
             },
-
             11: {
                 title: "الأسبوع الحادي عشر",
                 days: [
-                    {name: "الأحد", date: "11 / 5", subject: ""},
-                    {name: "الاثنين", date: "12 / 5", subject: ""},
-                    {name: "الثلاثاء", date: "13 / 5", subject: ""},
-                    {name: "الأربعاء", date: "14 / 5", subject: ""},
-                    {name: "الخميس", date: "15 / 5", subject: ""}
+                    { name: "الأحد", date: "11 / 5", subject: "" },
+                    { name: "الاثنين", date: "12 / 5", subject: "" },
+                    { name: "الثلاثاء", date: "13 / 5", subject: "" },
+                    { name: "الأربعاء", date: "14 / 5", subject: "" },
+                    { name: "الخميس", date: "15 / 5", subject: "" }
                 ]
             },
             12: {
                 title: "الأسبوع الثاني عشر",
                 days: [
-                    {name: "الأحد", date: "18 / 5", subject: ""},
-                    {name: "الاثنين", date: "19 / 5", subject: ""},
-                    {name: "الثلاثاء", date: "20 / 5", subject: ""},
-                    {name: "الأربعاء", date: "21 / 5", subject: ""},
-                    {name: "الخميس", date: "22 / 5", subject: ""}
+                    { name: "الأحد", date: "18 / 5", subject: "" },
+                    { name: "الاثنين", date: "19 / 5", subject: "" },
+                    { name: "الثلاثاء", date: "20 / 5", subject: "" },
+                    { name: "الأربعاء", date: "21 / 5", subject: "" },
+                    { name: "الخميس", date: "22 / 5", subject: "" }
                 ]
             },
             13: {
                 title: "الأسبوع الثالث عشر",
                 days: [
-                    {name: "الأحد", date: "25 / 5", subject: ""},
-                    {name: "الاثنين", date: "26 / 5", subject: ""},
-                    {name: "الثلاثاء", date: "27 / 5", subject: ""},
-                    {name: "الأربعاء", date: "28 / 5", subject: ""},
-                    {name: "الخميس", date: "29 / 5", subject: ""}
+                    { name: "الأحد", date: "25 / 5", subject: "" },
+                    { name: "الاثنين", date: "26 / 5", subject: "" },
+                    { name: "الثلاثاء", date: "27 / 5", subject: "" },
+                    { name: "الأربعاء", date: "28 / 5", subject: "" },
+                    { name: "الخميس", date: "29 / 5", subject: "" }
                 ]
             },
             14: {
                 title: "الأسبوع الرابع عشر",
                 days: [
-                    {name: "الأحد", date: "9 / 6", subject: ""},
-                    {name: "الاثنين", date: "10 / 6", subject: ""},
-                    {name: "الثلاثاء", date: "11 / 6", subject: ""},
-                    {name: "الأربعاء", date: "12 / 6", subject: ""},
-                    {name: "الخميس", date: "13 / 6", subject: ""}
+                    { name: "الأحد", date: "9 / 6", subject: "" },
+                    { name: "الاثنين", date: "10 / 6", subject: "" },
+                    { name: "الثلاثاء", date: "11 / 6", subject: "" },
+                    { name: "الأربعاء", date: "12 / 6", subject: "" },
+                    { name: "الخميس", date: "13 / 6", subject: "" }
                 ]
             },
             15: {
                 title: "الأسبوع الخامس عشر",
                 days: [
-                    {name: "الأحد", date: "16 / 6", subject: ""},
-                    {name: "الاثنين", date: "17 / 6", subject: ""},
-                    {name: "الثلاثاء", date: "18 / 6", subject: ""},
-                    {name: "الأربعاء", date: "19 / 6", subject: ""},
-                    {name: "الخميس", date: "20 / 6", subject: "إجازة إضافية 🏖️"}
+                    { name: "الأحد", date: "16 / 6", subject: "إجازة إضافية 🏖️" },
+                    { name: "الاثنين", date: "17 / 6", subject: "إجازة إضافية 🏖️" },
+                    { name: "الثلاثاء", date: "18 / 6", subject: "إجازة إضافية 🏖️" },
+                    { name: "الأربعاء", date: "19 / 6", subject: "إجازة إضافية 🏖️" },
+                    { name: "الخميس", date: "20 / 6", subject: "إجازة إضافية 🏖️" }
                 ]
             },
             16: {
                 title: "الأسبوع السادس عشر",
                 days: [
-                    {name: "الأحد", date: "23 / 6", subject: "إجازة إضافية 🏖️"},
-                    {name: "الاثنين", date: "24 / 6", subject: ""},
-                    {name: "الثلاثاء", date: "25 / 6", subject: ""},
-                    {name: "الأربعاء", date: "26 / 6", subject: ""},
-                    {name: "الخميس", date: "27 / 6", subject: ""}
+                    { name: "الأحد", date: "23 / 6", subject: "إجازة إضافية 🏖️" },
+                    { name: "الاثنين", date: "24 / 6", subject: "إجازة إضافية 🏖️" },
+                    { name: "الثلاثاء", date: "25 / 6", subject: "إجازة إضافية 🏖️" },
+                    { name: "الأربعاء", date: "26 / 6", subject: "إجازة إضافية 🏖️" },
+                    { name: "الخميس", date: "27 / 6", subject: "إجازة إضافية 🏖️" }
                 ]
             },
             17: {
                 title: "الأسبوع السابع عشر",
                 days: [
-                    {name: "الأحد", date: "1 / 7", subject: ""},
-                    {name: "الاثنين", date: "2 / 7", subject: ""},
-                    {name: "الثلاثاء", date: "3 / 7", subject: ""},
-                    {name: "الأربعاء", date: "4 / 7", subject: ""},
-                    {name: "الخميس", date: "5 / 7", subject: ""}
+                    { name: "الأحد", date: "1 / 7", subject: "" },
+                    { name: "الاثنين", date: "2 / 7", subject: "" },
+                    { name: "الثلاثاء", date: "3 / 7", subject: "" },
+                    { name: "الأربعاء", date: "4 / 7", subject: "" },
+                    { name: "الخميس", date: "5 / 7", subject: "" }
                 ]
             },
             18: {
                 title: "الأسبوع الثامن عشر",
                 days: [
-                    {name: "الأحد", date: "8 / 7", subject: ""},
-                    {name: "الاثنين", date: "9 / 7", subject: ""},
-                    {name: "الثلاثاء", date: "10 / 7", subject: ""},
-                    {name: "الأربعاء", date: "11 / 7", subject: ""},
-                    {name: "الخميس", date: "12 / 7", subject: ""}
+                    { name: "الأحد", date: "8 / 7", subject: "" },
+                    { name: "الاثنين", date: "9 / 7", subject: "" },
+                    { name: "الثلاثاء", date: "10 / 7", subject: "" },
+                    { name: "الأربعاء", date: "11 / 7", subject: "" },
+                    { name: "الخميس", date: "12 / 7", subject: "" }
                 ]
             }
         };
-        
-        function showWeekDetails(weekNumber) {
-            const weekData = weeksData[weekNumber];
+
+        // حفظ البيانات
+        function saveScheduleData() {
+            Object.keys(weeksData).forEach(weekId => {
+                weeksData[weekId].days.forEach((day, index) => {
+                    const input = document.getElementById(`subject-${weekId}-${index}`);
+                    if (input) {
+                        weeksData[weekId].days[index].subject = input.value;
+                    }
+                });
+            });
+            localStorage.setItem('scheduleData', JSON.stringify(weeksData));
+            console.log('Schedule data saved!');
+        }
+
+        // تحميل البيانات
+        function loadScheduleData() {
+            const savedData = localStorage.getItem('scheduleData');
+            if (savedData) {
+                const parsedData = JSON.parse(savedData);
+                Object.assign(weeksData, parsedData);
+                console.log('Schedule data loaded!');
+            }
+        }
+
+        // مسح البيانات
+        function clearSavedData() {
+            localStorage.removeItem('scheduleData');
+            alert('تم مسح جميع البيانات المحفوظة.');
+            window.location.reload();
+        }
+
+        // عرض تفاصيل الأسبوع
+        function showWeekDetails(weekId) {
+            const details = weeksData[weekId];
+            if (!details) return;
+
             const detailsTitle = document.getElementById('details-title');
             const detailsContent = document.getElementById('details-content');
-            const overlay = document.getElementById('overlay');
             const weekDetails = document.getElementById('week-details');
-            
-            detailsTitle.textContent = weekData.title;
-            
-            let content = '';
-            weekData.days.forEach(day => {
-                let dayClass = 'day-detail';
-                
-                // تحديد نوع اليوم للتلوين
-                if (day.subject.includes('اليوم الوطني')) {
-                    dayClass += ' national-day';
-                } else if (day.subject.includes('إجازة إضافية')) {
-                    dayClass += ' holiday-day';
-                } else if (day.subject.includes('إجازة رسمية')) {
-                    dayClass += ' autumn-day';
-                } else if (day.subject.includes('بداية العام الدراسي')) {
-                    dayClass += ' school-start-day';
-                }
-                
-                content += `
-                    <div class="${dayClass}">
-                        <div class="day-name-detail">${day.name}</div>
-                        <div class="day-date">${day.date}</div>
-                        <div class="day-subject">
-                            <input type="text" placeholder="الموضوع" value="${day.subject}" 
-                                   onchange="updateSubject('${weekNumber}', '${day.name}', this.value)">
-                        </div>
+            const overlay = document.getElementById('overlay');
+
+            detailsTitle.textContent = details.title;
+            detailsContent.innerHTML = ''; // مسح المحتوى القديم
+
+            details.days.forEach((day, index) => {
+                const dayDetail = document.createElement('div');
+                dayDetail.className = 'day-detail';
+                dayDetail.innerHTML = `
+                    <div class="day-name-detail">${day.name}</div>
+                    <div class="day-date">${day.date}</div>
+                    <div class="day-subject">
+                        <input type="text" id="subject-${weekId}-${index}" value="${day.subject}" placeholder="اكتب هنا" onchange="saveScheduleData()">
                     </div>
                 `;
+                detailsContent.appendChild(dayDetail);
             });
-            
-            detailsContent.innerHTML = content;
-            overlay.classList.add('show');
+
             weekDetails.classList.add('show');
+            overlay.classList.add('show');
         }
-        
+
+        // إغلاق نافذة التفاصيل
         function closeDetails() {
-            const overlay = document.getElementById('overlay');
             const weekDetails = document.getElementById('week-details');
-            
-            overlay.classList.remove('show');
+            const overlay = document.getElementById('overlay');
             weekDetails.classList.remove('show');
+            overlay.classList.remove('show');
         }
-        
-        function updateSubject(weekNumber, dayName, subject) {
-            const day = weeksData[weekNumber].days.find(d => d.name === dayName);
-            if (day) {
-                day.subject = subject;
-                // حفظ البيانات في المتصفح
-                saveDataToLocalStorage();
-            }
-        }
-        
-        // حفظ البيانات في المتصفح
-        function saveDataToLocalStorage() {
-            try {
-                localStorage.setItem('schoolScheduleData', JSON.stringify(weeksData));
-                console.log('تم حفظ البيانات بنجاح');
-            } catch (error) {
-                console.error('خطأ في حفظ البيانات:', error);
-            }
-        }
-        
-        // حفظ بيانات الأسماء
-        function saveNamesData() {
-            try {
-                const namesData = {
-                    position1: document.getElementById('position1').value,
-                    name1: document.getElementById('name1').value,
-                    position2: document.getElementById('position2').value,
-                    name2: document.getElementById('name2').value,
-                    position3: document.getElementById('position3').value,
-                    name3: document.getElementById('name3').value
-                };
-                localStorage.setItem('schoolNamesData', JSON.stringify(namesData));
-                console.log('تم حفظ بيانات الأسماء بنجاح');
-            } catch (error) {
-                console.error('خطأ في حفظ بيانات الأسماء:', error);
-            }
-        }
-        
-        // حفظ بيانات الإدارة والمدرسة
-        function saveEducationData() {
-            try {
-                const educationData = {
-                    generalEducation: document.getElementById('general-education').value,
-                    educationRegion: document.getElementById('education-region').value,
-                    school: document.getElementById('school-name').value,
-                    subject: document.getElementById('subject-name').value
-                };
-                localStorage.setItem('schoolEducationData', JSON.stringify(educationData));
-                console.log('تم حفظ بيانات الإدارة والمدرسة بنجاح');
-            } catch (error) {
-                console.error('خطأ في حفظ بيانات الإدارة والمدرسة:', error);
-            }
-        }
-        
 
-        
-        // تحميل بيانات الأسماء
-        function loadNamesData() {
-            try {
-                const savedNames = localStorage.getItem('schoolNamesData');
-                if (savedNames) {
-                    const namesData = JSON.parse(savedNames);
-                    document.getElementById('position1').value = namesData.position1 || '';
-                    document.getElementById('name1').value = namesData.name1 || '';
-                    document.getElementById('position2').value = namesData.position2 || '';
-                    document.getElementById('name2').value = namesData.name2 || '';
-                    document.getElementById('position3').value = namesData.position3 || '';
-                    document.getElementById('name3').value = namesData.name3 || '';
-                    console.log('تم تحميل بيانات الأسماء بنجاح');
-                }
-            } catch (error) {
-                console.error('خطأ في تحميل بيانات الأسماء:', error);
-            }
-        }
-        
-        // تحميل بيانات الإدارة والمدرسة
-        function loadEducationData() {
-            try {
-                const savedEducation = localStorage.getItem('schoolEducationData');
-                if (savedEducation) {
-                    const educationData = JSON.parse(savedEducation);
-                    document.getElementById('general-education').value = educationData.generalEducation || '';
-                    document.getElementById('education-region').value = educationData.educationRegion || '';
-                    document.getElementById('school-name').value = educationData.school || '';
-                    
-                    // معالجة اسم المادة
-                    const subjectInput = document.getElementById('subject-name');
-                    const subjectValue = educationData.subject || '';
-                    subjectInput.value = subjectValue;
-                    
-                    console.log('تم تحميل بيانات الإدارة والمدرسة بنجاح');
-                }
-            } catch (error) {
-                console.error('خطأ في تحميل بيانات الإدارة والمدرسة:', error);
-            }
-        }
-        
-        // تحميل البيانات من المتصفح
-        function loadDataFromLocalStorage() {
-            try {
-                const savedData = localStorage.getItem('schoolScheduleData');
-                if (savedData) {
-                    const parsedData = JSON.parse(savedData);
-                    // دمج البيانات المحفوظة مع البيانات الأساسية
-                    Object.keys(parsedData).forEach(weekKey => {
-                        if (weeksData[weekKey]) {
-                            parsedData[weekKey].days.forEach((savedDay, index) => {
-                                if (weeksData[weekKey].days[index]) {
-                                    // الاحتفاظ بالمواضيع المحفوظة فقط إذا لم تكن فارغة
-                                    if (savedDay.subject && savedDay.subject.trim() !== '') {
-                                        weeksData[weekKey].days[index].subject = savedDay.subject;
-                                    }
-                                }
-                            });
-                        }
-                    });
-                    console.log('تم تحميل البيانات المحفوظة بنجاح');
-                }
-            } catch (error) {
-                console.error('خطأ في تحميل البيانات:', error);
-            }
-        }
-        
-        // مسح جميع البيانات المحفوظة
-        function clearSavedData() {
-            if (confirm('هل أنت متأكد من حذف جميع البيانات المحفوظة؟')) {
-                localStorage.removeItem('schoolScheduleData');
-                localStorage.removeItem('schoolNamesData');
-                localStorage.removeItem('schoolEducationData');
-                location.reload(); // إعادة تحميل الصفحة
-            }
-        }
-        
-
-        
+        // عرض جميع التفاصيل
         function expandAll() {
-            // إنشاء صفحة جديدة تعرض جميع الأسابيع
-            const expandedView = document.createElement('div');
-            expandedView.id = 'expanded-view';
-            expandedView.style.cssText = `
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: white;
-                z-index: 3000;
-                overflow-y: auto;
-                padding: 20px;
-            `;
-            
-            let content = `
-                <div style="text-align: center; margin-bottom: 30px;">
-                    <h2 style="color: #2c3e50; font-size: 24px; margin-bottom: 10px;">جميع تفاصيل الأسابيع الدراسية</h2>
-                    <button onclick="closeExpandedView()" style="background: #dc3545; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-family: ArabicMain, Tahoma, sans-serif;">إغلاق ✕</button>
-                </div>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 20px;">
-            `;
-            
-            let weekNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18];
-            
-            weekNumbers.forEach(weekNum => {
-                const weekData = weeksData[weekNum];
-                content += `
-                    <div style="background: white; border: 2px solid #dee2e6; border-radius: 10px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                        <h3 style="text-align: center; color: #2c3e50; margin-bottom: 15px; font-size: 18px;">${weekData.title}</h3>
-                `;
-                
-                weekData.days.forEach(day => {
-                    let dayClass = '';
-                    let bgColor = '#f8f9fa';
-                    
-                    if (day.subject.includes('اليوم الوطني')) {
-                        bgColor = '#d4edda';
-                    } else if (day.subject.includes('إجازة إضافية')) {
-                        bgColor = '#f8d7da';
-                    } else if (day.subject.includes('إجازة رسمية')) {
-                        bgColor = '#fff3cd';
-                    } else if (day.subject.includes('بداية العام الدراسي')) {
-                        bgColor = 'linear-gradient(135deg, #d4edda, #cce5ff)';
-                    }
-                    
-                    content += `
-                        <div style="display: flex; justify-content: space-between; align-items: center; padding: 8px; margin: 5px 0; background: ${bgColor}; border-radius: 5px;">
-                            <div style="font-weight: 600; color: #495057; min-width: 80px;">${day.name}</div>
-                            <div style="color: #6c757d; font-size: 14px;">${day.date}</div>
-                            <div style="flex: 1; margin: 0 10px; text-align: center; color: #495057;">${day.subject || '____________'}</div>
-                        </div>
-                    `;
-                });
-                
-                content += '</div>';
-            });
-            
-            content += '</div>';
-            expandedView.innerHTML = content;
-            document.body.appendChild(expandedView);
-        }
-        
-        function closeExpandedView() {
-            const expandedView = document.getElementById('expanded-view');
-            if (expandedView) {
-                expandedView.remove();
+            const printView = document.getElementById('print-view');
+            const interactiveView = document.getElementById('interactive-view');
+            const expandBtn = document.querySelector('.expand-btn');
+
+            if (interactiveView.style.display !== 'none') {
+                interactiveView.style.display = 'none';
+                printView.style.display = 'block';
+                expandBtn.textContent = '📋 عرض التقويم';
+            } else {
+                interactiveView.style.display = 'grid';
+                printView.style.display = 'none';
+                expandBtn.textContent = '📋 عرض جميع التفاصيل';
             }
         }
-        
 
-        
-
-        
-        // وظيفة الطباعة المحسنة مع جميع التفاصيل
+        // تحميل وطباعة
         function printSchedule() {
-            // حفظ البيانات قبل الطباعة
-            saveDataToLocalStorage();
-            saveNamesData();
-            saveEducationData();
-            
-            // إنشاء نافذة طباعة جديدة
-            const printWindow = window.open('', '_blank');
-            
-            // إنشاء محتوى الطباعة
-            const printContent = `
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <title>التقويم الدراسي للفصل الدراسي الأول 1447 هـ</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap');
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            -webkit-print-color-adjust: exact !important;
-            color-adjust: exact !important;
-            print-color-adjust: exact !important;
+            window.print();
         }
-        
-        @page {
-            size: A4 portrait;
-            margin: 8mm;
-        }
-        
-        body {
-            font-family: 'Cairo', 'Tahoma', 'Arial Unicode MS', sans-serif;
-            background: white;
-            color: #333;
-            font-size: 9px;
-            line-height: 1.3;
-            direction: rtl;
-        }
-        
-        .header {
-            background: #4a4a4a !important;
-            color: white !important;
-            padding: 8px;
-            text-align: center;
-            margin-bottom: 10px;
-            border-radius: 5px;
-        }
-        
-        .header-content {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 8px;
-            flex-wrap: wrap;
-            padding: 0 20px;
-        }
-        
-        .ministry-logo {
-            width: 40px;
-            height: 40px;
-            object-fit: contain;
-        }
-        
-        .header h1 {
-            font-size: 12px;
-            font-weight: 700;
-            margin: 2px 0;
-            color: white;
-        }
-        
-        .header-info {
-            color: white;
-            font-size: 9px;
-            font-weight: 700;
-        }
-        
-        .main-content {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 10px;
-            margin-bottom: 10px;
-        }
-        
-        .weeks-grid {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 4px;
-        }
-        
-        .week-detail-section {
-            background: white;
-            border: 1px solid #dee2e6;
-            border-radius: 3px;
-            padding: 4px;
-        }
-        
-        .week-detail-section h4 {
-            font-size: 7px;
-            font-weight: 700;
-            color: white;
-            text-align: center;
-            margin-bottom: 3px;
-            padding: 3px;
-            background: #999;
-            border-radius: 2px;
-        }
-        
-        .day-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1px 0;
-            font-size: 6px;
-            border-bottom: 1px dotted #e9ecef;
-        }
-        
-        .day-row:last-child {
-            border-bottom: none;
-        }
-        
-        .day-name {
-            font-weight: 600;
-            color: #495057;
-            min-width: 25px;
-        }
-        
-        .day-date {
-            color: #6c757d;
-            min-width: 20px;
-            text-align: center;
-        }
-        
-        .day-subject {
-            flex: 1;
-            text-align: right;
-            color: #2c3e50;
-            margin-right: 3px;
-            font-size: 5px;
-            font-weight: bold;
-        }
-        
 
-        
-        .staff-section {
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
-        }
-        
-        .staff-section h3 {
-            color: #40E0D0;
-            font-size: 10px;
-            font-weight: 700;
-            text-align: center;
-            margin-bottom: 8px;
-        }
-        
-        .staff-box {
-            background: transparent;
-            border: 1px solid #999;
-            border-radius: 4px;
-            padding: 6px;
-            text-align: center;
-            min-height: 35px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        
-        .staff-label {
-            font-size: 7px;
-            font-weight: 600;
-            margin-bottom: 2px;
-            color: #666;
-        }
-        
-        .staff-name {
-            font-size: 8px;
-            font-weight: 700;
-            color: #003366;
-        }
-        
-        .contact-info {
-            background: #2c3e50;
-            color: white;
-            padding: 8px;
-            text-align: center;
-            border-radius: 4px;
-            font-size: 8px;
-            margin-top: 8px;
-        }
-        
-        .contact-info img {
-            max-width: 30px;
-            max-height: 30px;
-            margin-bottom: 4px;
-        }
-    </style>
-</head>
-<body>
-    <div class="header">
-        <div class="header-content">
-            <div style="display: flex; align-items: center; gap: 8px;">
-                <img src="https://salogos.org/wp-content/uploads/2021/11/UntiTtled-1-1300x988.png" alt="شعار وزارة التعليم" class="ministry-logo">
-                <div>
-                    ${getGeneralEducation() ? `<div class="header-info">${getGeneralEducation()}</div>` : ''}
-                    ${getEducationRegion() ? `<div class="header-info">${getEducationRegion()}</div>` : ''}
-                    ${getSchoolName() ? `<div class="header-info">${getSchoolName()}</div>` : ''}
-                </div>
-            </div>
-            
-            <div style="text-align: center;">
-                <h1 style="margin-bottom: 3px;">التقويم الدراسي</h1>
-                <h1>للفصل الدراسي الأول لعام 1447 هـ</h1>
-            </div>
-            
-            <div class="header-info" style="color: white; font-size: 10px; text-align: left;">${getSubjectName()}</div>
-        </div>
-    </div>
-    
-    <div class="main-content">
-        <div class="weeks-grid">
-            ${generateWeekDetails()}
-            
-            <!-- المربعات الخاصة في نهاية الأسابيع -->
-            <div class="week-detail-section" style="background: #e9ecef; border-color: #6c757d;">
-                <h4 style="background: #6c757d; color: white;">📝 الاختبارات النهائية</h4>
-                <div class="day-row">
-                    <span class="day-name">تبدأ من</span>
-                    <span class="day-date">يوم الأحد</span>
-                    <span class="day-subject">15 / 7 / 1447 هـ</span>
-                </div>
-            </div>
-            
-            <div class="week-detail-section" style="background: #d4edda; border-color: #28a745;">
-                <h4 style="background: #28a745; color: white;">🏖️ إجازة منتصف العام</h4>
-                <div class="day-row">
-                    <span class="day-name">من</span>
-                    <span class="day-date">20 / 7</span>
-                    <span class="day-subject">إجازة رسمية</span>
-                </div>
-                <div class="day-row">
-                    <span class="day-name">إلى</span>
-                    <span class="day-date">28 / 7</span>
-                    <span class="day-subject">إجازة رسمية</span>
-                </div>
-            </div>
-            
-            <div class="week-detail-section" style="background: #d1ecf1; border-color: #17a2b8;">
-                <h4 style="background: #17a2b8; color: white;">📚 الفصل الثاني</h4>
-                <div class="day-row">
-                    <span class="day-name">بداية</span>
-                    <span class="day-date">29 / 7</span>
-                    <span class="day-subject">يوم الأحد</span>
-                </div>
-                <div class="day-row">
-                    <span class="day-name">الفصل</span>
-                    <span class="day-date">1447 هـ</span>
-                    <span class="day-subject">بداية الفصل الدراسي</span>
-                </div>
-            </div>
-            
-            <!-- مربعات الأسماء بنفس ارتفاع الأسابيع -->
-            ${getPosition1() && getName1() ? `<div class="week-detail-section" style="background: white; border-color: #6c757d;">
-                <h4 style="background: #6c757d; color: white;">${getPosition1()}</h4>
-                <div class="day-row">
-                    <span class="day-name" style="color: #003366; font-weight: 700;">${getName1()}</span>
-                </div>
-            </div>` : ''}
-            
-            ${getPosition2() && getName2() ? `<div class="week-detail-section" style="background: white; border-color: #6c757d;">
-                <h4 style="background: #6c757d; color: white;">${getPosition2()}</h4>
-                <div class="day-row">
-                    <span class="day-name" style="color: #003366; font-weight: 700;">${getName2()}</span>
-                </div>
-            </div>` : ''}
-          ${getPosition3() && getName3() ? `<div class="week-detail-section" style="background: white; border-color: #6c757d;">
-    <h4 style="background: #6c757d; color: white;">${getPosition3()}</h4>
-    <div class="day-row">
-        <span class="day-name" style="color: #003366; font-weight: 700;">${getName3()}</span>
-    </div>
-</div>` : ''}
-</div>
-</div>
-
-<!-- معلومات التواصل -->
-<div class="contact-info">
-    <div style="display: flex; align-items: center; justify-content: center; gap: 15px;">
-        <!-- شعار المدرسة -->
-        <img src="logo.PNG" alt="شعار مدارس دار الذكر قسم البنات" style="height: 50px; margin-bottom: 0;">
-        
-        <div style="text-align: center;">
-            <strong style="color: #00796b; font-size: 12px;">مدارس دار الذكر قسم البنات © 2025</strong><br>
-            <span style="color: #ffc107; font-size: 11px; font-weight: 600;">جدة - المملكة العربية السعودية</span>
-        </div>
-    </div>
-</div>
-</body>
-</html>
-
-            `;
-            
-            // كتابة المحتوى في النافذة الجديدة
-            printWindow.document.write(printContent);
-            printWindow.document.close();
-            
-            // انتظار تحميل المحتوى ثم الطباعة
-            printWindow.onload = function() {
-                setTimeout(() => {
-                    printWindow.print();
-                    printWindow.close();
-                }, 500);
+        // حفظ البيانات عند تغيير الحقول
+        function saveEducationData() {
+            const education = {
+                general: document.getElementById('general-education').value,
+                region: document.getElementById('education-region').value,
+                school: document.getElementById('school-name').value,
+                subject: document.getElementById('subject-name').value
             };
+            localStorage.setItem('educationData', JSON.stringify(education));
         }
-        
-        // وظيفة إنشاء تفاصيل الأسابيع للطباعة
-        function generateWeekDetails() {
-            let allWeekDetails = '';
-            for (let weekNum = 1; weekNum <= 18; weekNum++) {
-                const weekData = weeksData[weekNum];
-                if (weekData) {
-                    // تحديد لون الخلفية حسب الأسبوع
-                    let weekStyle = '';
-                    
-                    allWeekDetails += `<div class="week-detail-section" style="${weekStyle}">`;
-                    allWeekDetails += `<h4>${weekData.title}</h4>`;
-                    
-                    weekData.days.forEach(day => {
-                        const subject = day.subject || '_______________';
-                        let dayStyle = '';
-                        
-                        // تلوين الأيام الخاصة
-                        if (day.subject.includes('اليوم الوطني')) {
-                            dayStyle = 'background: #d4edda !important;';
-                        } else if (day.subject.includes('إجازة إضافية')) {
-                            dayStyle = 'background: #f8d7da !important;';
-                        } else if (day.subject.includes('بداية العام الدراسي')) {
-                            dayStyle = 'background: linear-gradient(135deg, #d4edda, #cce5ff) !important;';
-                        }
-                        
-                        allWeekDetails += `<div class="day-row" style="${dayStyle}">`;
-                        allWeekDetails += `<span class="day-name">${day.name}</span>`;
-                        allWeekDetails += `<span class="day-date">${day.date}</span>`;
-                        allWeekDetails += `<span class="day-subject">${subject}</span>`;
-                        allWeekDetails += `</div>`;
-                    });
-                    
-                    allWeekDetails += `</div>`;
-                    
-                    // إضافة إجازة الخريف بعد الأسبوع 13
-                    if (weekNum === 13) {
-                        allWeekDetails += `<div class="week-detail-section" style="background: #fff3cd !important; border-color: #ffc107 !important;">`;
-                        allWeekDetails += `<h4 style="background: #ffc107 !important; color: #856404 !important;">🍂 إجازة الخريف</h4>`;
-                        allWeekDetails += `<div class="day-row">`;
-                        allWeekDetails += `<span class="day-name">من</span>`;
-                        allWeekDetails += `<span class="day-date">30 / 5</span>`;
-                        allWeekDetails += `<span class="day-subject">إجازة رسمية</span>`;
-                        allWeekDetails += `</div>`;
-                        allWeekDetails += `<div class="day-row">`;
-                        allWeekDetails += `<span class="day-name">إلى</span>`;
-                        allWeekDetails += `<span class="day-date">8 / 6</span>`;
-                        allWeekDetails += `<span class="day-subject">إجازة رسمية</span>`;
-                        allWeekDetails += `</div>`;
-                        allWeekDetails += `</div>`;
-                    }
-                }
+
+        // تحميل البيانات عند فتح الصفحة
+        function loadEducationData() {
+            const savedData = localStorage.getItem('educationData');
+            if (savedData) {
+                const education = JSON.parse(savedData);
+                document.getElementById('general-education').value = education.general || '';
+                document.getElementById('education-region').value = education.region || '';
+                document.getElementById('school-name').value = education.school || '';
+                document.getElementById('subject-name').value = education.subject || '';
             }
-            return allWeekDetails;
         }
-        
-        // وظيفة للحصول على تواريخ الأسبوع
-        function getWeekDates(weekNum) {
-            const weekDates = {
-                1: "1 / 3 - 5 / 3", 2: "8 / 3 - 12 / 3", 3: "15 / 3 - 19 / 3", 4: "22 / 3 - 26 / 3",
-                5: "29 / 3 - 3 / 4", 6: "6 / 4 - 10 / 4", 7: "13 / 4 - 17 / 4", 8: "20 / 4 - 24 / 4",
-                9: "27 / 4 - 1 / 5", 10: "4 / 5 - 8 / 5", 11: "11 / 5 - 15 / 5", 12: "18 / 5 - 22 / 5",
-                13: "25 / 5 - 29 / 5", 14: "9 / 6 - 13 / 6", 15: "16 / 6 - 20 / 6", 16: "23 / 6 - 27 / 6",
-                17: "1 / 7 - 5 / 7", 18: "8 / 7 - 12 / 7"
-            };
-            return weekDates[weekNum] || "";
-        }
-        
 
-        
-
-        
-        // وظائف الحصول على البيانات للطباعة
-        function getPosition1() {
-            const position = document.getElementById('position1').value;
-            return position && position.trim() !== '' ? position : null;
-        }
-        
-        function getName1() {
-            const name = document.getElementById('name1').value;
-            return name && name.trim() !== '' ? name : null;
-        }
-        
-        function getPosition2() {
-            const position = document.getElementById('position2').value;
-            return position && position.trim() !== '' ? position : null;
-        }
-        
-        function getName2() {
-            const name = document.getElementById('name2').value;
-            return name && name.trim() !== '' ? name : null;
-        }
-        
-        function getPosition3() {
-            const position = document.getElementById('position3').value;
-            return position && position.trim() !== '' ? position : null;
-        }
-        
-        function getName3() {
-            const name = document.getElementById('name3').value;
-            return name && name.trim() !== '' ? name : null;
-        }
-        
-        function getGeneralEducation() {
-            const general = document.getElementById('general-education').value;
-            return general && general.trim() !== '' ? general : null;
-        }
-        
-        function getEducationRegion() {
-            const region = document.getElementById('education-region').value;
-            return region && region.trim() !== '' ? region : null;
-        }
-        
-        function getSchoolName() {
-            const school = document.getElementById('school-name').value;
-            return school && school.trim() !== '' ? school : null;
-        }
-        
-        function getSubjectName() {
-            const subject = document.getElementById('subject-name').value;
-            return subject || '';
-        }
-        
-        function showMessage(text, color) {
-            const msg = document.createElement('div');
-            msg.style.cssText = `
-                position: fixed; top: 20px; right: 20px;
-                background: ${color}; color: white; padding: 15px 25px; border-radius: 10px;
-                z-index: 9999; font-family: ArabicMain, Tahoma, sans-serif; font-size: 14px;
-                box-shadow: 0 6px 20px rgba(0,0,0,0.3);
-                animation: slideIn 0.3s ease-out;
-            `;
-            msg.innerHTML = text;
-            
-            // إضافة الأنيميشن
-            const style = document.createElement('style');
-            style.textContent = `
-                @keyframes slideIn {
-                    from { transform: translateX(100%); opacity: 0; }
-                    to { transform: translateX(0); opacity: 1; }
-                }
-            `;
-            document.head.appendChild(style);
-            
-            document.body.appendChild(msg);
-            
-            setTimeout(() => {
-                if (document.body.contains(msg)) {
-                    msg.style.animation = 'slideIn 0.3s ease-out reverse';
-                    setTimeout(() => {
-                        if (document.body.contains(msg)) {
-                            document.body.removeChild(msg);
-                        }
-                    }, 300);
-                }
-            }, 3500);
-        }
-        
-        // تحميل البيانات المحفوظة عند بدء الصفحة
-        loadDataFromLocalStorage();
-        loadNamesData();
-        loadEducationData();
-        
-        // تحميل إضافي للتأكد
-        document.addEventListener('DOMContentLoaded', function() {
-            loadDataFromLocalStorage();
-            loadNamesData();
+        // تحميل البيانات عند تحميل الصفحة
+        window.onload = function() {
+            loadScheduleData();
             loadEducationData();
-        });
-        
-        // تحميل احتياطي
-        window.addEventListener('load', function() {
-            loadDataFromLocalStorage();
-            loadNamesData();
-            loadEducationData();
-        });
+        };
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96c06041d600b315',t:'MTc1NDY3MDM5Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</body>
 </html>
